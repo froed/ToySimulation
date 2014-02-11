@@ -26,13 +26,13 @@ public:
   /**
    * Constructor without Energy
    */
-   Pixel (Vec2& position, Vec2& size);
+   Pixel (const Vec2& position, const Vec2& size);
 
    /**
    * Constructor with Energy
    */
 
-   Pixel (Vec2& position, Vec2& size, double energy );
+   Pixel (const Vec2& position, const Vec2& size, const double energy );
 
    Vec2 getPosition();
    Vec2 getSize();
@@ -42,7 +42,7 @@ public:
    */
   virtual ~Pixel ( );
 
-  bool getPositionIsInside(Vec2& pos);
+  bool getPositionIsInside(const Vec2& pos);
 
 private:
   //

@@ -11,7 +11,7 @@
    /**
    *  Constructor
    */
-Sensor::Sensor(Vec2& pSize, unsigned int N) : size(pSize)
+Sensor::Sensor(const Vec2& pSize, unsigned int N) : size(pSize)
 {
 	p_sensorpixelpointer.reserve(N);
 }
@@ -25,7 +25,7 @@ Sensor::~Sensor ( ) { }
    *  public Funktion gibt Pointer auf Pixel des Sensors zurück indem der gegebene Vec2 liegt
    */
 
-Pixel * Sensor::getPixel(Vec2& position)
+Pixel * Sensor::getPixel(const Vec2& position)
 {
 
 	//myTimer.start();
@@ -59,7 +59,7 @@ Pixel * Sensor::getPixel(Vec2& position)
    *  private Funktion überprüft ob position noch innerhalb des Sensors liegt
    */
 
-bool Sensor::withinSensor(Vec2& position)
+bool Sensor::withinSensor(const Vec2& position)
 {
         // Position
         double x = position.getX();

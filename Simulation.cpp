@@ -54,7 +54,7 @@ void Simulation::printEnergies ( )
    /**
    *  public Funktion die die Simuation startet Ihr muss eine Startenergie, -Position und Richtung angegeben werden
    */
-void Simulation::run (double start_energy, Vec2& start_position, Vec2& start_direction ){
+void Simulation::run (double start_energy, const Vec2& start_position, const Vec2& start_direction ){
   // Deklaration unseres Starktpartikels
   Particle teilchen = Particle(start_energy, start_position, start_direction) ;
 

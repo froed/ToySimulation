@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "simulation.h"
+#include "Simulation.h"
 #include "Timer.h"
 
 #define PROGRAM_EXIT_OK 0
@@ -86,6 +86,7 @@ int main(int argc, char *argv[])
         Sensordaten >> p_size_x;
         Sensordaten >> p_size_y;
         // Erstellen des neuen Pixels
+
         Pixel *pixel = new Pixel(Vec2(p_x, p_y), Vec2(p_size_x,p_size_y));
         // Hinzufügen des Pixels und Überprüfung nächster Nachbarn
         sensor.addP_sensorpixelpointer(pixel);
