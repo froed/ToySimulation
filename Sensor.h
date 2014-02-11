@@ -28,7 +28,7 @@ public:
   /**
    * Constructor
    */
-   Sensor(Vec2& pSize, unsigned int N);
+   Sensor(const Vec2& pSize, unsigned int N);
 
   /**
    * Empty Destructor
@@ -52,7 +52,7 @@ public:
    * @return bool
    * @param  position
    */
-  bool withinSensor (Vec2& position );
+  bool withinSensor (const Vec2& position );
 
 
   /**
@@ -64,7 +64,7 @@ public:
   /**
    * Wird von Konstruktoren verwendet
    */
-  void initAttributes ( Vec2& size, unsigned int N) ;
+  void initAttributes ( const Vec2& size, unsigned int N) ;
 
 
 
@@ -75,7 +75,7 @@ public:
    * @param  position
    * @param  last_pixel
    */
-  Pixel * getPixel (Vec2& position);
+  Pixel * getPixel (const Vec2& position);
 
   /**
    **************************************************************

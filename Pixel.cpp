@@ -5,8 +5,8 @@
    * Constructor
    */
 
-Pixel::Pixel ( Vec2& pPosition, Vec2& pSize ) : position(pPosition), size(pSize) , energy(0) {}
-Pixel::Pixel ( Vec2& pPosition, Vec2& pSize, double pEnergy) : position(pPosition), size(pSize), energy(pEnergy) {}
+Pixel::Pixel ( const Vec2& pPosition, const Vec2& pSize ) : position(pPosition), size(pSize) , energy(0) {}
+Pixel::Pixel ( const Vec2& pPosition, const Vec2& pSize, const double pEnergy) : position(pPosition), size(pSize), energy(pEnergy) {}
 
    /**
    * Destructor

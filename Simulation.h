@@ -83,7 +83,7 @@ public:
    * @param  start_position
    * @param  start_direction
    */
-  void run (double start_energy, Vec2& start_position, Vec2& start_direction );
+  void run (double start_energy, const Vec2& start_position, const Vec2& start_direction );
 
 
 
