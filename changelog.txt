@@ -22,4 +22,5 @@
 	-> start point: release, win32: 1612us
 - after Vec2 - refactoring: ~517629us
 - after optimization: ~ 1000us <- specify use case first!
+- added Simulation Result
 
